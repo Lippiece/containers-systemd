@@ -1,0 +1,10 @@
+[Container]
+Image=docker.io/searxng/searxng:latest
+AutoUpdate=registry
+
+PublishPort=3001:8080
+
+Volume=searxng-settings:/etc/searxng/
+
+[Install]
+WantedBy=default.target

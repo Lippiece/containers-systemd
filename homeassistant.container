@@ -1,0 +1,16 @@
+[Container]
+ContainerName=homeassistant
+Image=ghcr.io/home-assistant/home-assistant:stable
+Network=host
+PodmanArgs=--privileged
+AutoUpdate=registry
+
+Volume=/etc/localtime:/etc/localtime:ro
+Volume=home-assistant-config:/config
+Volume=/run/dbus:/run/dbus:ro
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,10 @@
+[Container]
+ContainerName=languagetool
+Image=docker.io/elestio/languagetool
+PublishPort=3006:8010
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

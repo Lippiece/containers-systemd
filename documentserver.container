@@ -1,0 +1,13 @@
+[Container]
+ContainerName=documentserver
+Image=docker.io/onlyoffice/documentserver:latest
+AutoUpdate=registry
+
+Environment=JWT_SECRET=1b770f8f-df0f-4150-a7a2-ebbcd86657e4
+PublishPort=3010:80
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

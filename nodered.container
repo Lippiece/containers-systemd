@@ -1,0 +1,11 @@
+[Container]
+ContainerName=nodered
+Image=docker.io/nodered/node-red:latest-22
+AutoUpdate=registry
+
+PublishPort=3005:1880
+
+Volume=nodered:/data
+
+[Install]
+WantedBy=default.target
