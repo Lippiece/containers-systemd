@@ -3,6 +3,9 @@ ContainerName=jackett
 Image=lscr.io/linuxserver/jackett:latest
 AutoUpdate=registry
 
+PublishPort=4003:9117
+PublishPort=9117:9117
+
 Volume=jackett_config:/config
 Volume=jackett_downloads:/downloads
 
