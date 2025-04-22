@@ -8,5 +8,9 @@ PublishPort=3002:8080
 Volume=vw-data:/data/
 
 Environment=ROCKET_PORT=8080
+
+[Service]
+Restart=always
+
 [Install]
 WantedBy=default.target

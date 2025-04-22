@@ -1,7 +1,7 @@
 [Container]
 ContainerName=jackett
 Image=lscr.io/linuxserver/jackett:latest
-Label=“io.containers.autoupdate=registry”
+AutoUpdate=registry
 
 PublishPort=4003:9117
 
@@ -11,6 +11,7 @@ Volume=jackett_downloads:/downloads
 Environment=PUID=1000 PGID=1000 TZ=Etc/UTC
 
 Network=host
+
 [Service]
 Restart=always
 
