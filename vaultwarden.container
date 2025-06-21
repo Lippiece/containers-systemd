@@ -12,5 +12,8 @@ Environment=DOMAIN=https://warden.ydns.eu
 Environment=TRASH_AUTO_DELETE_DAYS=14
 Environment=SIGNUPS_ALLOWED=false
 
+[Service]
+Restart=always
+
 [Install]
 WantedBy=default.target

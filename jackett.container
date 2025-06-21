@@ -3,7 +3,7 @@ ContainerName=jackett
 Image=docker.io/hotio/jackett:latest
 AutoUpdate=registry
 
-#PublishPort=4003:9117
+PublishPort=9117:9117
 
 Volume=jackett_config:/config
 Volume=jackett_downloads:/downloads
@@ -11,6 +11,7 @@ Volume=jackett_downloads:/downloads
 Environment=PUID=1000 PGID=1000 TZ=Etc/UTC
 
 Network=host
+
 [Service]
 Restart=always
 
