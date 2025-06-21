@@ -1,6 +1,6 @@
 [Container]
 ContainerName=adguardhome
-Image=docker.io/adguard/adguardhome
+Image=docker.io/adguard/adguardhome:edge
 AutoUpdate=registry
 
 PublishPort=53:53/tcp

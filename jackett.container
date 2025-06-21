@@ -1,9 +1,9 @@
 [Container]
 ContainerName=jackett
-Image=lscr.io/linuxserver/jackett:latest
-Label=“io.containers.autoupdate=registry”
+Image=docker.io/hotio/jackett:latest
+AutoUpdate=registry
 
-PublishPort=4003:9117
+#PublishPort=4003:9117
 
 Volume=jackett_config:/config
 Volume=jackett_downloads:/downloads

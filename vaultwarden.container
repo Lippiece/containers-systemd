@@ -8,5 +8,9 @@ PublishPort=3002:8080
 Volume=vw-data:/data/
 
 Environment=ROCKET_PORT=8080
+Environment=DOMAIN=https://warden.ydns.eu
+Environment=TRASH_AUTO_DELETE_DAYS=14
+Environment=SIGNUPS_ALLOWED=false
+
 [Install]
 WantedBy=default.target
