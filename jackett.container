@@ -1,6 +1,6 @@
 [Container]
 ContainerName=jackett
-Image=docker.io/hotio/jackett:latest
+Image=docker.io/linuxserver/jackett:latest
 AutoUpdate=registry
 
 PublishPort=9117:9117
