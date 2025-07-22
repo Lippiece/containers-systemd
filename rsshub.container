@@ -1,0 +1,12 @@
+[Container]
+ContainerName=rsshub
+Image=docker.io/diygod/rsshub:chromium-bundled
+AutoUpdate=registry
+
+PublishPort=3011:1200
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
