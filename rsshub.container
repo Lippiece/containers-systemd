@@ -5,6 +5,8 @@ AutoUpdate=registry
 
 PublishPort=3011:1200
 
+EnvironmentFile=rsshub.env
+
 [Service]
 Restart=always
 
