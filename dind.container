@@ -1,0 +1,14 @@
+[Container]
+ContainerName=docker.io/docker_dind
+AutoUpdate=registry
+
+Exec=dockerd -H tcp://0.0.0.0:2375 '--tls=false'
+Image=docker:dind
+PodmanArgs=--privileged
+
+[Service]
+Restart=always
+
+---
+
+

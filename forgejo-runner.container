@@ -1,0 +1,17 @@
+[Unit]
+Requires=dind.service forgejo.service
+After=dind.service forgejo.service
+
+[Container]
+Image=data.forgejo.org/forgejo/runner:9
+AutoUpdate=registry
+ContainerName=forgejo-runner
+
+Environment=DOCKER_HOST=tcp://dind:2375
+
+Exec=/bin/sh -c 'while : ; do sleep 1 ; done ;'
+
+Volume=forgejo-runner-data:/data
+
+[Service]
+Restart=always
