@@ -10,7 +10,7 @@ Volume=vw-data:/data/
 Environment=ROCKET_PORT=8080
 Environment=DOMAIN=https://warden.ydns.eu
 Environment=TRASH_AUTO_DELETE_DAYS=14
-Environment=SIGNUPS_ALLOWED=false
+Environment=SIGNUPS_ALLOWED=true
 
 [Service]
 Restart=always
