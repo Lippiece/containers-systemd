@@ -8,7 +8,7 @@ Environment=FORGEJO__repository__ENABLE_PUSH_CREATE_USER=true
 Environment=FORGEJO__repository__ENABLE_PUSH_CREATE_ORG=true
 
 PublishPort=3003:3000
-PublishPort=2222:22
+PublishPort=3103:22
 
 Volume=forgejo:/data
 
