@@ -22,9 +22,6 @@ Environment=APACHE_PORT=11000
 Environment=APACHE_IP_BINDING=0.0.0.0
 Environment=WATCHTOWER_DOCKER_SOCKET_PATH=/run/user/1000/podman/podman.sock
 Environment=SKIP_DOMAIN_VALIDATION=true
-Environment=HTTP_PROXY=""
-Environment=HTTPS_PROXY=""
-Environment=NO_PROXY=docker.io
 
 [Service]
 Restart=always

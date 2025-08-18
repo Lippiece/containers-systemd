@@ -1,10 +1,11 @@
 [Container]
-ContainerName=docker.io/docker_dind
+ContainerName=dind
 AutoUpdate=registry
 
 Exec=dockerd -H tcp://0.0.0.0:2375 '--tls=false'
-Image=docker:dind
+Image=docker.io/docker:dind
 PodmanArgs=--privileged
 
+Network=forgejo.container
 [Service]
 Restart=always
