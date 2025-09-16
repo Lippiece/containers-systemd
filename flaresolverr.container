@@ -1,0 +1,15 @@
+[Container]
+Image=ghcr.io/flaresolverr/flaresolverr:latest
+ContainerName=flaresolverr
+AutoUpdate=registry
+
+Environment=LOG_LEVEL=info LOG_HTML=false CAPTCHA_SOLVER=none TZ=Europe/London
+
+PublishPort=9127:8191
+
+Network=host
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
