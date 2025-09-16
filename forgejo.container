@@ -15,5 +15,25 @@ Volume=forgejo:/data
 [Service]
 Restart=always
 
+KeyringMode=Private
+RestrictSUIDGUID=yes
+UMask=0077
+LockPersonality=yes
+RestrictRealtime=yes
+MemoryDenyWriteExecute=yes
+
+#CapabilityBoundingSet=~CAP_SYS_PTRACE
+
+#ProtectSystem=strict
+#PrivateTmp=yes
+
+#ProtectHome=yes 
+#or for services that complain about R/W on an unnecessary home dir
+#ProtectHome=tmpfs
+#ProtectClock=yes
+#ProtectKernelLogs=yes
+#ProtectKernelModules=yes
+#User=lippiece
+#DynamicUser=yes 
 [Install]
 WantedBy=default.target

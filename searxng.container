@@ -9,5 +9,11 @@ Volume=searxng-settings:/etc/searxng/
 [Service]
 Restart=always
 
+KeyringMode=Private
+RestrictSUIDGUID=yes
+UMask=0077
+LockPersonality=yes
+RestrictRealtime=yes
+MemoryDenyWriteExecute=yes
 [Install]
 WantedBy=default.target
