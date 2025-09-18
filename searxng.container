@@ -6,6 +6,8 @@ PublishPort=3001:8080
 
 Volume=searxng-settings:/etc/searxng/
 
+DNS=9.9.9.9
+
 [Service]
 Restart=always
 

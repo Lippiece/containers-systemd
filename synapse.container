@@ -7,10 +7,16 @@ Image=docker.io/matrixdotorg/synapse:latest
 Volume=synapse_data:/data
 
 PublishPort=4200:8008
+PublishPort=4201:8009
+PublishPort=4202:8448
+Network=synapse.network
 
 EnvironmentFile=synapse.env
 
 AutoUpdate=registry
+
+[Unit]
+Wants=mas.service mas-db.service
 
 [Service]
 Restart=always

@@ -17,6 +17,7 @@ Volume=adguard_conf:/opt/adguardhome/conf
 Volume=/var/lib/caddy/certificates/acme-v02.api.letsencrypt.org-directory/lipguard.ydns.eu/:/opt/adguardhome/certs
 
 AddCapability=CAP_NET_BIND_SERVICE
+
 [Service]
 Restart=always
 
