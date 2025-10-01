@@ -1,0 +1,20 @@
+[Container]
+ContainerName=mas-db
+Image=docker.io/postgres:latest
+AutoUpdate=registry
+
+Volume=mas_db_data:/var/lib/postgresql/data
+
+Environment=POSTGRES_USER=mas_user POSTGRES_PASSWORD=mas_password POSTGRES_DB=mas
+
+Network=synapse.network
+
+[Unit]
+Requires=synapse.service
+After=synapse.service
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always

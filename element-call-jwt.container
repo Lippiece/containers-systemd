@@ -1,0 +1,17 @@
+[Container]
+Image=ghcr.io/element-hq/lk-jwt-service:latest
+ContainerName=element-call-jwt
+
+EnvironmentFile=element-call-jwt.env
+
+PublishPort=4230:8080
+
+[Unit]
+Requires=synapse.service mas-db.service
+After=synapse.service mas-db.service
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

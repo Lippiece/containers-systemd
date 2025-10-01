@@ -1,0 +1,22 @@
+[Container]
+ContainerName=mas
+Image=ghcr.io/element-hq/matrix-authentication-service
+AutoUpdate=registry
+
+Volume=mas_config_dir:/etc/mas/
+Environment=MAS_CONFIG=/etc/mas/config.yaml
+
+PublishPort=4210:8080
+Network=synapse.network
+
+AutoUpdate=registry
+
+[Unit]
+Requires=synapse.service mas-db.service
+After=synapse.service mas-db.service
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

@@ -15,8 +15,10 @@ EnvironmentFile=synapse.env
 
 AutoUpdate=registry
 
+DNS=9.9.9.9
+
 [Unit]
-Wants=mas.service mas-db.service
+Wants=mas.service mas-db.service element-call-livekit.service element-call-jwt.service
 
 [Service]
 Restart=always

@@ -1,0 +1,21 @@
+[Container]
+Image=livekit/livekit-server:latest
+ContainerName=element-call-livekit
+
+Exec=--config /etc/livekit/livekit.yaml
+
+PublishPort=4240:7880/tcp
+PublishPort=4241:7881/tcp
+PublishPort=50100-50200:50100-50200/udp
+
+Volume=livekit_data:/etc/livekit
+
+[Unit]
+Requires=synapse.service
+After=synapse.service
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
