@@ -1,6 +1,7 @@
 [Container]
-Image=livekit/livekit-server:latest
+Image=docker.io/livekit/livekit-server:latest
 ContainerName=element-call-livekit
+AutoUpdate=registry
 
 Exec=--config /etc/livekit/livekit.yaml
 
@@ -19,3 +20,5 @@ Restart=always
 
 [Install]
 WantedBy=default.target
+
+#/* vim: set filetype=systemd: */

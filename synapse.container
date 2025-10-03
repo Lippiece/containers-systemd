@@ -15,13 +15,13 @@ EnvironmentFile=synapse.env
 
 AutoUpdate=registry
 
-DNS=9.9.9.9
-
 [Unit]
-Wants=mas.service mas-db.service element-call-livekit.service element-call-jwt.service
+Wants=mas.service mas-db.service element-call-livekit.service element-call-jwt.service mautrix-telegram.service
 
 [Service]
 Restart=always
 
 [Install]
 WantedBy=default.target
+
+#/* vim: set filetype=systemd: */

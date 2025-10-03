@@ -2,6 +2,8 @@
 Image=ghcr.io/element-hq/lk-jwt-service:latest
 ContainerName=element-call-jwt
 
+AutoUpdate=registry
+
 EnvironmentFile=element-call-jwt.env
 
 PublishPort=4230:8080
@@ -15,3 +17,5 @@ Restart=always
 
 [Install]
 WantedBy=default.target
+
+#/* vim: set filetype=systemd: */

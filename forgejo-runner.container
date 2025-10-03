@@ -16,3 +16,5 @@ Volume=forgejo-runner-data:/data
 Network=forgejo.container
 [Service]
 Restart=always
+
+#/* vim: set filetype=systemd: */

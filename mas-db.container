@@ -18,3 +18,5 @@ WantedBy=default.target
 
 [Service]
 Restart=always
+
+#/* vim: set filetype=systemd: */

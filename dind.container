@@ -9,3 +9,7 @@ PodmanArgs=--privileged
 Network=forgejo.container
 [Service]
 Restart=always
+
+# vim: set filetype=systemd
+
+#/* vim: set filetype=systemd: */

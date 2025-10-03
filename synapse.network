@@ -1,0 +1,6 @@
+[Network]
+DNS=9.9.9.9
+
+[Install]
+WantedBy=default.target
+

@@ -1,0 +1,21 @@
+[Container]
+ContainerName=mautrix-telegram
+Image=dock.mau.dev/mautrix/telegram:latest
+AutoUpdate=registry
+
+Volume=mautrix-telegram:/data
+
+Network=synapse.network
+
+[Unit]
+Requires=synapse.service mas.service
+After=synapse.service mas.service
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
+
+
+#/* vim: set filetype=systemd: */
