@@ -2,8 +2,6 @@
 ContainerName=synapse
 Image=docker.io/matrixdotorg/synapse:latest
 
-#Exec=generate
-
 Volume=synapse_data:/data
 
 PublishPort=4200:8008
@@ -16,7 +14,9 @@ EnvironmentFile=synapse.env
 AutoUpdate=registry
 
 [Unit]
-Wants=mas.service mas-db.service element-call-livekit.service element-call-jwt.service mautrix-telegram.service
+Requires=mas-db.service 
+After=mas-db.service 
+Wants=mas.service element-call-livekit.service element-call-jwt.service mautrix-telegram.service
 
 [Service]
 Restart=always

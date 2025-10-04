@@ -10,8 +10,7 @@ Environment=POSTGRES_USER=mas_user POSTGRES_PASSWORD=mas_password POSTGRES_DB=ma
 Network=synapse.network
 
 [Unit]
-Requires=synapse.service
-After=synapse.service
+Wants=mas.service element-call-jwt.service
 
 [Install]
 WantedBy=default.target
