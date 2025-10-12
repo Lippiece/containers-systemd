@@ -3,7 +3,7 @@ Image=ghcr.io/flaresolverr/flaresolverr:latest
 ContainerName=flaresolverr
 AutoUpdate=registry
 
-Environment=LOG_LEVEL=info LOG_HTML=false CAPTCHA_SOLVER=none TZ=Europe/London
+Environment=LOG_LEVEL=info LOG_HTML=false CAPTCHA_SOLVER=none TZ=Europe/London SEARXNG_PORT=3001
 
 PublishPort=9127:8191
 
