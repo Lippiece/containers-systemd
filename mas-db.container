@@ -3,7 +3,7 @@ ContainerName=mas-db
 Image=docker.io/postgres:latest
 AutoUpdate=registry
 
-Volume=mas_db_data_new:/var/lib/postgresql/data
+Volume=mas_db_data_new:/var/lib/postgresql
 
 Environment=POSTGRES_USER=mas_user POSTGRES_PASSWORD=mas_password POSTGRES_DB=mas
 
