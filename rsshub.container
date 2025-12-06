@@ -1,6 +1,6 @@
 [Container]
 ContainerName=rsshub
-Image=docker.io/diygod/rsshub:chromium-bundled
+Image=docker.io/diygod/rsshub:latest
 AutoUpdate=registry
 
 PublishPort=3011:1200
