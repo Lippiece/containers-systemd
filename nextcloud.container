@@ -6,7 +6,7 @@ Requires=podman.socket
 
 [Container]
 ContainerName=nextcloud-aio-mastercontainer
-Image=docker.io/nextcloud/all-in-one:latest
+Image=ghcr.io/nextcloud-releases/all-in-one:latest
 Network=bridge
 SecurityLabelDisable=true
 AutoUpdate=registry
@@ -22,6 +22,7 @@ Environment=APACHE_PORT=11000
 Environment=APACHE_IP_BINDING=0.0.0.0
 Environment=WATCHTOWER_DOCKER_SOCKET_PATH=/run/user/1000/podman/podman.sock
 Environment=SKIP_DOMAIN_VALIDATION=true
+Environment=COLLABORA_SECCOMP_DISABLED=true
 
 [Service]
 Restart=always

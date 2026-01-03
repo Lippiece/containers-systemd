@@ -7,6 +7,7 @@ Volume=mas_config_dir:/etc/mas/
 Environment=MAS_CONFIG=/etc/mas/config.yaml
 
 PublishPort=4210:8080
+PublishPort=4211:8081
 Network=synapse.network
 
 AutoUpdate=registry

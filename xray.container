@@ -1,0 +1,22 @@
+[Container]
+AutoUpdate=registry
+
+ContainerName=xray
+
+Image=docker.io/teddysun/xray
+
+Volume=xray:/etc/xray
+
+Network=xray.network
+
+[Service]
+Restart=always
+
+[Unit]
+Before=searxng.service jackett.service
+Wants=searxng.service jackett.service
+
+[Install]
+WantedBy=default.target
+
+#/* vim: set filetype=systemd: */
