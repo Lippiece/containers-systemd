@@ -3,7 +3,7 @@ Requires=dind.service forgejo.service
 After=dind.service forgejo.service
 
 [Container]
-Image=data.forgejo.org/forgejo/runner:9
+Image=data.forgejo.org/forgejo/runner:12
 AutoUpdate=registry
 ContainerName=forgejo-runner
 

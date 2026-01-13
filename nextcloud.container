@@ -12,15 +12,17 @@ SecurityLabelDisable=true
 AutoUpdate=registry
 DNS=9.9.9.9
 
+PodmanArgs=--cpus=2
+
 PublishPort=4001:8080
 PublishPort=3004:80
 
 Volume=nextcloud_aio_mastercontainer:/mnt/docker-aio-config
-Volume=/run/user/1000/podman/podman.sock:/var/run/docker.sock:ro
+Volume=/run/user/1001/podman/podman.sock:/var/run/docker.sock:ro
 
 Environment=APACHE_PORT=11000
 Environment=APACHE_IP_BINDING=0.0.0.0
-Environment=WATCHTOWER_DOCKER_SOCKET_PATH=/run/user/1000/podman/podman.sock
+Environment=WATCHTOWER_DOCKER_SOCKET_PATH=/run/user/1001/podman/podman.sock
 Environment=SKIP_DOMAIN_VALIDATION=true
 Environment=COLLABORA_SECCOMP_DISABLED=true
 

@@ -1,0 +1,18 @@
+[Container]
+ContainerName=roundcube-db
+Image=docker.io/postgres:latest
+AutoUpdate=registry
+
+Volume=roundcube_db_data:/var/lib/postgresql
+
+Environment=POSTGRES_USER=roundcube POSTGRES_PASSWORD=roundcube-password POSTGRES_DB=roundcube
+
+Network=roundcube.container
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Restart=always
+
+#/* vim: set filetype=systemd: */
