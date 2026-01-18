@@ -11,7 +11,7 @@ Environment=DOCKER_HOST=tcp://dind:2375
 
 Exec=/bin/sh -c 'sleep 5; forgejo-runner daemon'
 
-Volume=forgejo-runner-data:/data
+Volume=forgejo-runner-data:/data:U
 
 Network=forgejo.container
 

@@ -3,15 +3,18 @@ ContainerName=roundcube
 AutoUpdate=registry
 Image=docker.io/roundcube/roundcubemail:latest
 
-Environment=DNS=9.9.9.9 ROUNDCUBEMAIL_COMPOSER_PLUGINS=toteph42/identity_switch,texxasrulez/persistent_login,kitist/html5_notifier,mmvi/twofactor_webauthn,roundcube/carddav ROUNDCUBEMAIL_INSTALL_PLUGINS=1
-# scopen-coop/roundcube_caldav,
+Environment=DNS=9.9.9.9
+Environment=ROUNDCUBEMAIL_COMPOSER_PLUGINS=toteph42/identity_switch,texxasrulez/persistent_login,kitist/html5_notifier,mmvi/twofactor_webauthn,roundcube/carddav
+Environment=ROUNDCUBEMAIL_INSTALL_PLUGINS=1
+Environment=ROUNDCUBEMAIL_SKIN=elastic
+Environment=ROUNDCUBEMAIL_PLUGINS=archive,zipdownload,enigma
 EnvironmentFile=roundcube.env
 
 
 Volume=roundcube_config:/var/roundcube/config/
 Volume=roundcube:/var/www/html/
 
-PublishPort=3300:80
+PublishPort=3400:80
 
 [Unit]
 Wants=roundcube-db.service
