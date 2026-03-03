@@ -1,6 +1,6 @@
 [Container]
 ContainerName=forgejo
-Image=codeberg.org/forgejo/forgejo:13
+Image=codeberg.org/forgejo/forgejo:14
 AutoUpdate=registry
 
 Environment=USER_UID=1000 USER_GID=1000
