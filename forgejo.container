@@ -12,7 +12,7 @@ PublishPort=3103:22
 
 Volume=forgejo:/data
 
-DNS=9.9.9.9
+DNS=1.1.1.1
 
 [Service]
 Restart=always

@@ -3,7 +3,7 @@ ContainerName=roundcube
 AutoUpdate=registry
 Image=docker.io/roundcube/roundcubemail:latest
 
-Environment=DNS=9.9.9.9
+Environment=DNS=1.1.1.1
 Environment=ROUNDCUBEMAIL_COMPOSER_PLUGINS=toteph42/identity_switch,texxasrulez/persistent_login,kitist/html5_notifier,mmvi/twofactor_webauthn,roundcube/carddav
 Environment=ROUNDCUBEMAIL_INSTALL_PLUGINS=1
 Environment=ROUNDCUBEMAIL_SKIN=elastic
