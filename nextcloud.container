@@ -11,6 +11,7 @@ Network=bridge
 SecurityLabelDisable=true
 AutoUpdate=registry
 DNS=1.1.1.1
+DNSSearch=.
 
 PodmanArgs=--cpus=2
 

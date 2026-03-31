@@ -1,5 +1,4 @@
 [Network]
-DNS=9.9.9.9
 ; PublishPort=3001:8080
 
 [Install]

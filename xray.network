@@ -1,6 +1,7 @@
 [Network]
-DNS=9.9.9.9
+; DNS=1.1.1.1
 ; PublishPort=3001:8080
+Subnet=10.89.0.0/24
 
 [Install]
 WantedBy=default.target

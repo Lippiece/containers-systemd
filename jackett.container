@@ -1,6 +1,6 @@
 [Container]
 ContainerName=jackett
-Image=docker.io/linuxserver/jackett:latest
+Image=docker.io/linuxserver/jackett:version-v0.24.1450
 AutoUpdate=registry
 
 PublishPort=9117:9117

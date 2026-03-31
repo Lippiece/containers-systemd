@@ -7,6 +7,8 @@ Image=docker.io/teddysun/xray
 
 Volume=xray:/etc/xray
 
+PublishPort=2334:2334
+
 Network=xray.network
 
 [Service]
