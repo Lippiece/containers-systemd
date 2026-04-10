@@ -13,8 +13,7 @@ PublishPort=50100-50200:50100-50200/udp
 Volume=livekit_data:/etc/livekit
 
 [Unit]
-Requires=synapse.service
-After=synapse.service
+Requires=element-call-jwt.service
 
 [Service]
 Restart=always

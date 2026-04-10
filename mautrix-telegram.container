@@ -11,14 +11,12 @@ Network=xray.network
 
 AddCapability=NET_ADMIN
 [Unit]
-Requires=synapse.service mas.service
-After=synapse.service mas.service
+Requires=synapse.service xray.service
 
 [Service]
 Restart=always
 
 [Install]
 WantedBy=default.target
-
 
 #/* vim: set filetype=systemd: */

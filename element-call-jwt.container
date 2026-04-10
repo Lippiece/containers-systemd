@@ -9,8 +9,7 @@ EnvironmentFile=element-call-jwt.env
 PublishPort=4230:8080
 
 [Unit]
-Requires=synapse.service mas-db.service
-After=synapse.service mas-db.service
+Requires=synapse.service
 
 [Service]
 Restart=always

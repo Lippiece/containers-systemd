@@ -7,6 +7,7 @@ Volume=synapse_data:/data
 PublishPort=4200:8008
 PublishPort=4201:8009
 PublishPort=4202:8448
+
 Network=synapse.network
 
 EnvironmentFile=synapse.env
@@ -14,9 +15,9 @@ EnvironmentFile=synapse.env
 AutoUpdate=registry
 
 [Unit]
-Requires=mas-db.service 
-After=mas-db.service 
-Wants=mas.service element-call-livekit.service element-call-jwt.service mautrix-telegram.service
+Requires=mas-db.service
+Before=mautrix-telegram.service
+Wants=mas.service element-call-livekit.service element-call-jwt.service
 
 [Service]
 Restart=always
