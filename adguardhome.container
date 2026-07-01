@@ -14,7 +14,7 @@ PublishPort=4002:3000/tcp
 
 Volume=adguard_work:/opt/adguardhome/work
 Volume=adguard_conf:/opt/adguardhome/conf
-Volume=/var/lib/caddy/.local/share/caddy/certificates/acme-v02.api.letsencrypt.org-directory/lipguard.ydns.eu/:/opt/adguardhome/certs
+Volume=/var/lib/caddy/.local/share/caddy/certificates/acme-v02.api.letsencrypt.org-directory/lipguard.lippiece.ru/:/opt/adguardhome/certs
 
 [Service]
 Restart=always

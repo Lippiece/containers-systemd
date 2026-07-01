@@ -1,6 +1,7 @@
 [Container]
 ContainerName=mautrix-telegram
-Image=localhost/mautrix-iptabled:latest
+Image=dock.mau.dev/mautrix/telegram:latest
+AutoUpdate=registry
 
 Volume=mautrix-telegram:/data
 
@@ -8,8 +9,6 @@ PublishPort=4220:29317
 
 Network=synapse.network
 Network=xray.network
-
-AddCapability=NET_ADMIN
 [Unit]
 Requires=synapse.service xray.service
 

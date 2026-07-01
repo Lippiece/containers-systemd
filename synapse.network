@@ -1,5 +1,6 @@
 [Network]
 ; PublishPort=3001:8080
+DNS=169.254.1.2
 
 [Install]
 WantedBy=default.target

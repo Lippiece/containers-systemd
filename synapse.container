@@ -14,6 +14,8 @@ EnvironmentFile=synapse.env
 
 AutoUpdate=registry
 
+DNS=169.254.1.2
+
 [Unit]
 Requires=mas-db.service
 Before=mautrix-telegram.service
